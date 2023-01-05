@@ -48,3 +48,8 @@ def error_404(request):
 
 def contact(request):
     return render(request, 'contact-us.html')
+
+
+
+def products(request):
+    return render(request, 'products.html')
