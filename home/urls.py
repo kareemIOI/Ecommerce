@@ -12,8 +12,11 @@ urlpatterns = [
     path('wishlist', views.wishlist, name = 'wishlist'),
     path('checkout', views.checkout, name = 'checkout'),
     path('bloglist', views.bloglist, name = 'bloglist'),
-    path('blogsingle', views.blogsingle, name = 'blogsingle'),
+    path('blogsingle', views.blogsingle, name = 'blog-single'),
     path('404', views.error_404, name = '404'),
     path('contact', views.contact, name = 'contact'),
     path('products', views.products, name = 'products'),
+    path('register', views.register, name = 'register'),
+    path('login', views.login, name = 'login'),
+    # path('logout', views.logout, name = 'logout'), #! not implemented yet because we don't want to redirect
 ]	

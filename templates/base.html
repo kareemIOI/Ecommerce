@@ -106,20 +106,19 @@
 						</div>
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="index.html" class="active">Home</a></li>
+								<li><a href="/" class="active">Home</a></li>
 								<li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="#">Products</a></li>
 										<li><a href="{% url 'productDetails' %}">Product Details</a></li> 
 										<li><a href="{% url 'checkout' %}">Checkout</a></li> 
 										<li><a href="{% url 'cart' %}">Cart</a></li> 
-										<li><a href="{% url 'login' %}">Login</a></li> 
                                     </ul>
                                 </li> 
 								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="{% url 'bloglist' %}">Blog List</a></li>
-										<li><a href="{% url 'blogsingle' %}">Blog Single</a></li>
+										<li><a href="{% url 'blog-single' %}">Blog Single</a></li>
                                     </ul>
                                 </li> 
 								<li><a href="{% url '404' %}">404</a></li>
@@ -152,5 +151,29 @@
 {% block contact_us %}
 {% endblock contact_us %}
 
+{% block content_single-blog %}
+{% endblock content_single-blog %}
+
+{% block login %}
+{% endblock login %}
+
+{% block shop %}
+{% endblock shop %}
+
+{% block 404 %}
+{% endblock 404 %}
+
+
+
+<script src="/static/js/jquery.js"></script>
+<script src="/static/js/price-range.js"></script>
+<script src="/static/js/jquery.scrollUp.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/jquery.prettyPhoto.js"></script>
+<script src="/static/js/main.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="/static/js/gmaps.js"></script>
+<script src="/static/js/contact.js"></script>
+<script src="/static/js/jquery.scrollUp.min.js"></script>
 </body>
 </html>

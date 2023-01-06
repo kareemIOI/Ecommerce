@@ -1,123 +1,5 @@
 {% extends 'base.html' %}
 {% block content_blog %}
-	<header id="header"><!--header-->
-		<div class="header_top"><!--header_top-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="contactinfo">
-							<ul class="nav nav-pills">
-								<li><a href=""><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
-								<li><a href=""><i class="fa fa-envelope"></i> info@domain.com</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="social-icons pull-right">
-							<ul class="nav navbar-nav">
-								<li><a href=""><i class="fa fa-facebook"></i></a></li>
-								<li><a href=""><i class="fa fa-twitter"></i></a></li>
-								<li><a href=""><i class="fa fa-linkedin"></i></a></li>
-								<li><a href=""><i class="fa fa-dribbble"></i></a></li>
-								<li><a href=""><i class="fa fa-google-plus"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/header_top-->
-		
-		<div class="header-middle"><!--header-middle-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="logo pull-left">
-							<a href="index.html"><img src="images/home/logo.png" alt="" /></a>
-						</div>
-						<div class="btn-group pull-right">
-							<div class="btn-group">
-								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-									USA
-									<span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu">
-									<li><a href="">Canada</a></li>
-									<li><a href="">UK</a></li>
-								</ul>
-							</div>
-							
-							<div class="btn-group">
-								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-									DOLLAR
-									<span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu">
-									<li><a href="">Canadian Dollar</a></li>
-									<li><a href="">Pound</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-8">
-						<div class="shop-menu pull-right">
-							<ul class="nav navbar-nav">
-								<li><a href=""><i class="fa fa-user"></i> Account</a></li>
-								<li><a href=""><i class="fa fa-star"></i> Wishlist</a></li>
-								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-								<li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/header-middle-->
-	
-		<div class="header-bottom"><!--header-bottom-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-9">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-						<div class="mainmenu pull-left">
-							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="index.html">Home</a></li>
-								<li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="shop.html">Products</a></li>
-										<li><a href="product-details.html">Product Details</a></li> 
-										<li><a href="checkout.html">Checkout</a></li> 
-										<li><a href="cart.html">Cart</a></li> 
-										<li><a href="login.html">Login</a></li> 
-                                    </ul>
-                                </li> 
-								<li class="dropdown"><a href="#" class="active">Blog<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="blog.html" class="active">Blog List</a></li>
-										<li><a href="blog-single.html">Blog Single</a></li>
-                                    </ul>
-                                </li> 
-								<li><a href="404.html">404</a></li>
-								<li><a href="contact-us.html">Contact</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="search_box pull-right">
-							<input type="text" placeholder="Search"/>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/header-bottom-->
-	</header><!--/header-->
-	
 	<section>
 		<div class="container">
 			<div class="row">
@@ -255,7 +137,7 @@
 						</div><!--/price-range-->
 						
 						<div class="shipping text-center"><!--shipping-->
-							<img src="images/home/shipping.jpg" alt="" />
+							<img src="/static/images/home/shipping.jpg" alt="" />
 						</div><!--/shipping-->
 					</div>
 				</div>
@@ -279,7 +161,7 @@
 								</span>
 							</div>
 							<a href="">
-								<img src="images/blog/blog-one.jpg" alt="">
+								<img src="/static/images/blog/blog-one.jpg" alt="">
 							</a>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 							<a  class="btn btn-primary" href="">Read More</a>
@@ -301,7 +183,7 @@
 								</span>
 							</div>
 							<a href="">
-								<img src="images/blog/blog-two.jpg" alt="">
+								<img src="/static/images/blog/blog-two.jpg" alt="">
 							</a>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 							<a  class="btn btn-primary" href="">Read More</a>
@@ -323,7 +205,7 @@
 								</span>
 							</div>
 							<a href="">
-								<img src="images/blog/blog-three.jpg" alt="">
+								<img src="/static/images/blog/blog-three.jpg" alt="">
 							</a>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 							<a  class="btn btn-primary" href="">Read More</a>
@@ -357,7 +239,7 @@
 							<div class="video-gallery text-center">
 								<a href="#">
 									<div class="iframe-img">
-										<img src="images/home/iframe1.png" alt="" />
+										<img src="/static/images/home/iframe1.png" alt="" />
 									</div>
 									<div class="overlay-icon">
 										<i class="fa fa-play-circle-o"></i>
@@ -372,7 +254,7 @@
 							<div class="video-gallery text-center">
 								<a href="#">
 									<div class="iframe-img">
-										<img src="images/home/iframe2.png" alt="" />
+										<img src="/static/images/home/iframe2.png" alt="" />
 									</div>
 									<div class="overlay-icon">
 										<i class="fa fa-play-circle-o"></i>
@@ -387,7 +269,7 @@
 							<div class="video-gallery text-center">
 								<a href="#">
 									<div class="iframe-img">
-										<img src="images/home/iframe3.png" alt="" />
+										<img src="/static/images/home/iframe3.png" alt="" />
 									</div>
 									<div class="overlay-icon">
 										<i class="fa fa-play-circle-o"></i>
@@ -402,7 +284,7 @@
 							<div class="video-gallery text-center">
 								<a href="#">
 									<div class="iframe-img">
-										<img src="images/home/iframe4.png" alt="" />
+										<img src="/static/images/home/iframe4.png" alt="" />
 									</div>
 									<div class="overlay-icon">
 										<i class="fa fa-play-circle-o"></i>
@@ -415,7 +297,7 @@
 					</div>
 					<div class="col-sm-3">
 						<div class="address">
-							<img src="images/home/map.png" alt="" />
+							<img src="/static/images/home/map.png" alt="" />
 							<p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
 						</div>
 					</div>
@@ -488,24 +370,4 @@
 				</div>
 			</div>
 		</div>
-		
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="row">
-					<p class="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
-					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
-				</div>
-			</div>
-		</div>
-		
-	</footer><!--/Footer-->
-	
-
-  
-<script src="/static/js/jquery.js"></script>
-<script src="/static/js/price-range.js"></script>
-<script src="/static/js/jquery.scrollUp.min.js"></script>
-<script src="/static/js/bootstrap.min.js"></script>
-<script src="/static/js/jquery.prettyPhoto.js"></script>
-<script src="/static/js/main.js"></script>
 {% endblock content_blog %}
