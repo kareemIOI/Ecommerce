@@ -85,7 +85,13 @@
 								<li><a href="{% url 'wishlist' %}"><i class="fa fa-star"></i> Wishlist</a></li>
 								<li><a href="{% url 'checkout' %}"><i class="fa fa-crosshairs"></i> Checkout</a></li>
 								<li><a href="{% url 'cart' %}"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-								<li><a href="{% url 'login' %}"><i class="fa fa-lock"></i> Login</a></li>
+
+								{% if user.is_authenticated %}
+								<li class="me-3 list-unstyled">{{user.first_name}}</li>
+								<a href="{% url 'logout' %}" class="fa fa-lock">logout</a>
+								{% else %}
+									<li><a href="{% url 'login' %}" class="fa fa-lock">Log in</a></li>
+									{% endif%}
 							</ul>
 						</div>
 					</div>

@@ -11,26 +11,27 @@ def index(request):
 def product_details(request):
     return render(request, 'product-details.html')
 
-def checkout(request):
-    return render(request, 'checkout.html')
-
 def cart(request):
     return render(request, 'cart.html')
 
 def login(request):
+    return render(request, 'login.html')
+
+def Login(request):
     if request.method == 'POST':
-        first_name = request.POST['first_name']
-        email = request.POST['email']
-        user = auth.authenticate(first_name = first_name, email = email)
-        
+        username = request.POST['username']
+        password = request.POST['password']
+        user = auth.authenticate(username = username, password = password)
+        print({username})
+        print(password)
         if user is not None:
             auth.login(request, user)
             return redirect('/')
         else:
-            messages.info(request, 'invalid password')
+            messages.info(request, 'invalid')
             return redirect('login')
     else:
-        return render(request, 'login.html')
+        return render(request, 'index.html')
 
 def register(request):
     if request.method == "POST":
@@ -91,3 +92,9 @@ def contact(request):
 
 def products(request):
     return render(request, 'products.html')
+
+
+def logout(request):
+    auth.logout(request)
+    return redirect('/')
+    

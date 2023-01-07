@@ -18,5 +18,6 @@ urlpatterns = [
     path('products', views.products, name = 'products'),
     path('register', views.register, name = 'register'),
     path('login', views.login, name = 'login'),
-    # path('logout', views.logout, name = 'logout'), #! not implemented yet because we don't want to redirect
-]	
+    path('Login', views.Login, name = 'Login'),
+    path('logout', views.logout, name = 'logout'),
+]
