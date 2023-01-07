@@ -1,8 +1,11 @@
-from django.shortcuts import redirect, render
-from django.contrib.auth.models import User
-from django.contrib import auth
-from django.contrib import messages
-from .models import Register
+try:
+    from django.shortcuts import redirect, render
+    from django.contrib.auth.models import User
+    from django.contrib import auth
+    from django.contrib import messages
+except ImportError as Error:
+    print("Cant import", Error)
+    
 # Create your views here.
 
 def index(request):
@@ -18,6 +21,7 @@ def login(request):
     return render(request, 'login.html')
 
 def Login(request):
+
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
