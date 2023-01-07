@@ -115,7 +115,7 @@
 								<li><a href="/" class="active">Home</a></li>
 								<li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
-                                        <li><a href="#">Products</a></li>
+                                        <li><a href="{% url 'products' %}">Products</a></li>
 										<li><a href="{% url 'productDetails' %}">Product Details</a></li> 
 										<li><a href="{% url 'checkout' %}">Checkout</a></li> 
 										<li><a href="{% url 'cart' %}">Cart</a></li> 
@@ -169,6 +169,8 @@
 {% block 404 %}
 {% endblock 404 %}
 
+{% block product %}
+{% endblock product %}
 
 
 <script src="/static/js/jquery.js"></script>
